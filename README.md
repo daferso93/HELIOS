@@ -4,6 +4,7 @@ Information Systems III | UIA | Daniel Fernández Solano.
 ------------------------------------------------------------------------------------------------
 
 - Set Up Github Bash
+
   $ git config --global user.name "xxxxxxxx"
   
   $ git config --global user.email "xxxxxxx@gmail.com"
