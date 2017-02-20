@@ -25,6 +25,12 @@ public class mainPlayer : MonoBehaviour {
 			theRB.velocity = new Vector2 (-moveSpeed, theRB.velocity.y);
 		} else if (Input.GetKey (right)) {
 			theRB.velocity = new Vector2 (moveSpeed, theRB.velocity.y);
+		} else {
+			theRB.velocity = new Vector2 (0, theRB.velocity.y);
+		}
+
+		if (Input.GetKeyDown (jump)) {
+			theRB.velocity = new Vector2 (theRB.velocity.x, jumpForce);
 		}
 	}
 }
