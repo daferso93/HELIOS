@@ -1,7 +1,18 @@
 fileFormatVersion: 2
 guid: 05882b1d78298b142b741b6d5edb67ed
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: cultist_0
+    21300002: cultist_1
+    21300004: cultist_2
+    21300006: cultist_3
+    21300008: cultist_4
+    21300010: cultist_5
+    21300012: cultist_6
+    21300014: cultist_7
+    21300016: cultist_8
+    21300018: cultist_9
+    21300020: cultist_10
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0

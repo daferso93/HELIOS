@@ -1,7 +1,19 @@
 fileFormatVersion: 2
 guid: 596315f1b4296fc43bed2a49fec81151
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: peasant_b_0
+    21300002: peasant_b_1
+    21300004: peasant_b_2
+    21300006: peasant_b_3
+    21300008: peasant_b_4
+    21300010: peasant_b_5
+    21300012: peasant_b_6
+    21300014: peasant_b_7
+    21300016: peasant_b_8
+    21300018: peasant_b_9
+    21300020: peasant_b_10
+    21300022: peasant_b_11
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0

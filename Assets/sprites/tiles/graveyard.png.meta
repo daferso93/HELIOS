@@ -1,7 +1,71 @@
 fileFormatVersion: 2
 guid: ea9ae3c4ff517f64f891e3bc0c8d6ffa
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: graveyard_0
+    21300002: graveyard_1
+    21300004: graveyard_2
+    21300006: graveyard_3
+    21300008: graveyard_4
+    21300010: graveyard_5
+    21300012: graveyard_6
+    21300014: graveyard_7
+    21300016: graveyard_8
+    21300018: graveyard_9
+    21300020: graveyard_10
+    21300022: graveyard_11
+    21300024: graveyard_12
+    21300026: graveyard_13
+    21300028: graveyard_14
+    21300030: graveyard_15
+    21300032: graveyard_16
+    21300034: graveyard_17
+    21300036: graveyard_18
+    21300038: graveyard_19
+    21300040: graveyard_20
+    21300042: graveyard_21
+    21300044: graveyard_22
+    21300046: graveyard_23
+    21300048: graveyard_24
+    21300050: graveyard_25
+    21300052: graveyard_26
+    21300054: graveyard_27
+    21300056: graveyard_28
+    21300058: graveyard_29
+    21300060: graveyard_30
+    21300062: graveyard_31
+    21300064: graveyard_32
+    21300066: graveyard_33
+    21300068: graveyard_34
+    21300070: graveyard_35
+    21300072: graveyard_36
+    21300074: graveyard_37
+    21300076: graveyard_38
+    21300078: graveyard_39
+    21300080: graveyard_40
+    21300082: graveyard_41
+    21300084: graveyard_42
+    21300086: graveyard_43
+    21300088: graveyard_44
+    21300090: graveyard_45
+    21300092: graveyard_46
+    21300094: graveyard_47
+    21300096: graveyard_48
+    21300098: graveyard_49
+    21300100: graveyard_50
+    21300102: graveyard_51
+    21300104: graveyard_52
+    21300106: graveyard_53
+    21300108: graveyard_54
+    21300110: graveyard_55
+    21300112: graveyard_56
+    21300114: graveyard_57
+    21300116: graveyard_58
+    21300118: graveyard_59
+    21300120: graveyard_60
+    21300122: graveyard_61
+    21300124: graveyard_62
+    21300126: graveyard_63
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0

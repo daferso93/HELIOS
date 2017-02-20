@@ -1,7 +1,14 @@
 fileFormatVersion: 2
 guid: 3ad6bd38c5b5b174890b9d44897a388b
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: slime_0
+    21300002: slime_1
+    21300004: slime_2
+    21300006: slime_3
+    21300008: slime_4
+    21300010: slime_5
+    21300012: slime_6
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0

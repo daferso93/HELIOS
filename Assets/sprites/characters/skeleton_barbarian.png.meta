@@ -1,7 +1,19 @@
 fileFormatVersion: 2
 guid: dac4600ccadef05458f411aa98aa1264
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: skeleton_barbarian_0
+    21300002: skeleton_barbarian_1
+    21300004: skeleton_barbarian_2
+    21300006: skeleton_barbarian_3
+    21300008: skeleton_barbarian_4
+    21300010: skeleton_barbarian_5
+    21300012: skeleton_barbarian_6
+    21300014: skeleton_barbarian_7
+    21300016: skeleton_barbarian_8
+    21300018: skeleton_barbarian_9
+    21300020: skeleton_barbarian_10
+    21300022: skeleton_barbarian_11
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0

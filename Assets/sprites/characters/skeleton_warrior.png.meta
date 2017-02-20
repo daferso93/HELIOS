@@ -1,7 +1,18 @@
 fileFormatVersion: 2
 guid: e92951a0fb6ab2c42bd21d7ed460d7ed
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: skeleton_warrior_0
+    21300002: skeleton_warrior_1
+    21300004: skeleton_warrior_2
+    21300006: skeleton_warrior_3
+    21300008: skeleton_warrior_4
+    21300010: skeleton_warrior_5
+    21300012: skeleton_warrior_6
+    21300014: skeleton_warrior_7
+    21300016: skeleton_warrior_8
+    21300018: skeleton_warrior_9
+    21300020: skeleton_warrior_10
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0

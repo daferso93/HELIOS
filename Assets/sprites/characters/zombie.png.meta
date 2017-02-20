@@ -1,7 +1,19 @@
 fileFormatVersion: 2
 guid: 03a7cf1089230f54192172a43729b352
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: zombie_0
+    21300002: zombie_1
+    21300004: zombie_2
+    21300006: zombie_3
+    21300008: zombie_4
+    21300010: zombie_5
+    21300012: zombie_6
+    21300014: zombie_7
+    21300016: zombie_8
+    21300018: zombie_9
+    21300020: zombie_10
+    21300022: zombie_11
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0

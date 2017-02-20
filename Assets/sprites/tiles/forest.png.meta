@@ -1,7 +1,57 @@
 fileFormatVersion: 2
 guid: 4206706155550ce48aab67f3c381ae0e
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: forest_0
+    21300002: forest_1
+    21300004: forest_2
+    21300006: forest_3
+    21300008: forest_4
+    21300010: forest_5
+    21300012: forest_6
+    21300014: forest_7
+    21300016: forest_8
+    21300018: forest_9
+    21300020: forest_10
+    21300022: forest_11
+    21300024: forest_12
+    21300026: forest_13
+    21300028: forest_14
+    21300030: forest_15
+    21300032: forest_16
+    21300034: forest_17
+    21300036: forest_18
+    21300038: forest_19
+    21300040: forest_20
+    21300042: forest_21
+    21300044: forest_22
+    21300046: forest_23
+    21300048: forest_24
+    21300050: forest_25
+    21300052: forest_26
+    21300054: forest_27
+    21300056: forest_28
+    21300058: forest_29
+    21300060: forest_30
+    21300062: forest_31
+    21300064: forest_32
+    21300066: forest_33
+    21300068: forest_34
+    21300070: forest_35
+    21300072: forest_36
+    21300074: forest_37
+    21300076: forest_38
+    21300078: forest_39
+    21300080: forest_40
+    21300082: forest_41
+    21300084: forest_42
+    21300086: forest_43
+    21300088: forest_44
+    21300090: forest_45
+    21300092: forest_46
+    21300094: forest_47
+    21300096: forest_48
+    21300098: forest_49
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0

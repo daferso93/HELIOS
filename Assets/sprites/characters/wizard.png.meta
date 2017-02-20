@@ -1,7 +1,18 @@
 fileFormatVersion: 2
 guid: ffc92b874d7fcf24989455936bf35fb1
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: wizard_0
+    21300002: wizard_1
+    21300004: wizard_2
+    21300006: wizard_3
+    21300008: wizard_4
+    21300010: wizard_5
+    21300012: wizard_6
+    21300014: wizard_7
+    21300016: wizard_8
+    21300018: wizard_9
+    21300020: wizard_10
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0

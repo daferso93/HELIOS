@@ -1,7 +1,19 @@
 fileFormatVersion: 2
 guid: 33ad635b6edbf2d428ebcdbb947ef9f3
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: barbarian_0
+    21300002: barbarian_1
+    21300004: barbarian_2
+    21300006: barbarian_3
+    21300008: barbarian_4
+    21300010: barbarian_5
+    21300012: barbarian_6
+    21300014: barbarian_7
+    21300016: barbarian_8
+    21300018: barbarian_9
+    21300020: barbarian_10
+    21300022: barbarian_11
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0

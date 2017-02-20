@@ -1,7 +1,17 @@
 fileFormatVersion: 2
 guid: 4f805200951baf445876cc73fdf60f91
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: sword_0
+    21300002: sword_1
+    21300004: sword_2
+    21300006: sword_3
+    21300008: sword_4
+    21300010: sword_5
+    21300012: sword_6
+    21300014: sword_7
+    21300016: sword_8
+    21300018: sword_9
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0

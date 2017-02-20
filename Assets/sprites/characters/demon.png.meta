@@ -1,7 +1,18 @@
 fileFormatVersion: 2
 guid: 8d9ab47d72314d640b3bd59f2a27cb24
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: demon_0
+    21300002: demon_1
+    21300004: demon_2
+    21300006: demon_3
+    21300008: demon_4
+    21300010: demon_5
+    21300012: demon_6
+    21300014: demon_7
+    21300016: demon_8
+    21300018: demon_9
+    21300020: demon_10
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0

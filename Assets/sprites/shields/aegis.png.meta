@@ -1,7 +1,17 @@
 fileFormatVersion: 2
 guid: f1223fca4e0431e46ae2faa86649955a
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: aegis_0
+    21300002: aegis_1
+    21300004: aegis_2
+    21300006: aegis_3
+    21300008: aegis_4
+    21300010: aegis_5
+    21300012: aegis_6
+    21300014: aegis_7
+    21300016: aegis_8
+    21300018: aegis_9
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0

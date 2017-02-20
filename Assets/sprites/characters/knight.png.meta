@@ -1,7 +1,19 @@
 fileFormatVersion: 2
 guid: faf561a0cc919bc4c93cadfac0091c6c
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: knight_0
+    21300002: knight_1
+    21300004: knight_2
+    21300006: knight_3
+    21300008: knight_4
+    21300010: knight_5
+    21300012: knight_6
+    21300014: knight_7
+    21300016: knight_8
+    21300018: knight_9
+    21300020: knight_10
+    21300022: knight_11
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
