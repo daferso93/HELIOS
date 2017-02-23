@@ -18,7 +18,15 @@ public class mainPlayer : MonoBehaviour {
 	void Start () {
 		theRB = GetComponent<Rigidbody2D>();
 	}
-	
+
+	void test(){
+		theRB.velocity = new Vector2 (-moveSpeed, theRB.velocity.y);
+	}
+
+	void test1(){
+		theRB.velocity = new Vector2 (moveSpeed, theRB.velocity.y);
+	}
+
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKey (left)) {
