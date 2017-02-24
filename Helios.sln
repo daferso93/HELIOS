@@ -1,7 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helios", "Assembly-CSharp-firstpass.csproj", "{477E9AC0-E46E-A398-EFB7-E8B066A80FAE}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helios", "Assembly-CSharp.csproj", "{4E22EE8A-E64D-3D94-7550-62F373CD13E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helios", "Assembly-CSharp-Editor-firstpass.csproj", "{12E73EE7-A4C1-8B32-68E2-505018EC22AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +13,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{477E9AC0-E46E-A398-EFB7-E8B066A80FAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{477E9AC0-E46E-A398-EFB7-E8B066A80FAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{477E9AC0-E46E-A398-EFB7-E8B066A80FAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{477E9AC0-E46E-A398-EFB7-E8B066A80FAE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4E22EE8A-E64D-3D94-7550-62F373CD13E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4E22EE8A-E64D-3D94-7550-62F373CD13E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E22EE8A-E64D-3D94-7550-62F373CD13E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E22EE8A-E64D-3D94-7550-62F373CD13E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12E73EE7-A4C1-8B32-68E2-505018EC22AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12E73EE7-A4C1-8B32-68E2-505018EC22AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12E73EE7-A4C1-8B32-68E2-505018EC22AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12E73EE7-A4C1-8B32-68E2-505018EC22AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

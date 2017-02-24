@@ -2,8 +2,8 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\touchBehaivor.cs">
     <Files>
-      <File FileName="Assets\Scripts\mainPlayer.cs" Line="22" Column="11" />
-      <File FileName="Assets\Scripts\touchBehaivor.cs" Line="10" Column="15" />
+      <File FileName="Assets\Scripts\mainPlayer.cs" Line="27" Column="62" />
+      <File FileName="Assets\Scripts\touchBehaivor.cs" Line="36" Column="36" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
