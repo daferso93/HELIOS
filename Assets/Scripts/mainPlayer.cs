@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class mainPlayer : MonoBehaviour {
 
@@ -14,31 +15,32 @@ public class mainPlayer : MonoBehaviour {
 
 	private Rigidbody2D theRB;
 
-	// Use this for initialization
 	void Start () {
 		theRB = GetComponent<Rigidbody2D>();
 	}
-
-	void test(){
-		theRB.velocity = new Vector2 (-moveSpeed, theRB.velocity.y);
-	}
-
-	void test1(){
-		theRB.velocity = new Vector2 (moveSpeed, theRB.velocity.y);
-	}
-
-	// Update is called once per frame
+		
 	void Update () {
-		if (Input.GetKey (left)) {
+		Vector2 moveVec = new Vector2 (CrossPlatformInputManager.GetAxis ("Horizontal"), CrossPlatformInputManager.GetAxis ("Vertical"));
+
+		//Validation for left & right movement.
+		if (moveVec.x < 0) {
 			theRB.velocity = new Vector2 (-moveSpeed, theRB.velocity.y);
-		} else if (Input.GetKey (right)) {
+			transform.localScale = new Vector3 (-1, 1, 1);
+		} else if (moveVec.x > 0) {
 			theRB.velocity = new Vector2 (moveSpeed, theRB.velocity.y);
-		} else {
-			theRB.velocity = new Vector2 (0, theRB.velocity.y);
+			transform.localScale = new Vector3 (1, 1, 1);
 		}
 
-		if (Input.GetKeyDown (jump)) {
+		//Validation for jump & attack action.
+		bool isJumping = CrossPlatformInputManager.GetButton("JumpButton");
+		bool isAtacking = CrossPlatformInputManager.GetButton("ShootButtton");
+
+		if (isJumping) {
 			theRB.velocity = new Vector2 (theRB.velocity.x, jumpForce);
+		}
+
+		if (isAtacking) {
+			Debug.Log("isAtacking");
 		}
 	}
 }
