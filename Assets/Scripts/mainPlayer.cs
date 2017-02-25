@@ -14,15 +14,17 @@ public class mainPlayer : MonoBehaviour {
 	public KeyCode throwBall;
 
 	private Rigidbody2D theRB;
+	private Animator animator;
 
 	void Start () {
 		theRB = GetComponent<Rigidbody2D>();
+		animator = GetComponent<Animator> ();
 	}
 		
 	void Update () {
 		Vector2 moveVec = new Vector2 (CrossPlatformInputManager.GetAxis ("Horizontal"), CrossPlatformInputManager.GetAxis ("Vertical"));
 
-		//Validation for left & right movement.
+		//Validation for left & right action.
 		if (moveVec.x < 0) {
 			theRB.velocity = new Vector2 (-moveSpeed, theRB.velocity.y);
 			transform.localScale = new Vector3 (-1, 1, 1);
@@ -40,7 +42,11 @@ public class mainPlayer : MonoBehaviour {
 		}
 
 		if (isAtacking) {
-			Debug.Log("isAtacking");
+			animator.SetTrigger("Shoot");
 		}
+
+		//Set values for animation
+		animator.SetFloat("Speed", Mathf.Abs(theRB.velocity.x));
+		animator.SetBool ("Jump", isJumping);
 	}
 }
