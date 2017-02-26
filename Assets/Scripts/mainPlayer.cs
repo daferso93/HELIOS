@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
+using UnityEngine.UI;
 
 public class mainPlayer : MonoBehaviour {
 
@@ -16,9 +17,12 @@ public class mainPlayer : MonoBehaviour {
 	private Rigidbody2D theRB;
 	private Animator animator;
 
+	public Text testText;
+
 	void Start () {
 		theRB = GetComponent<Rigidbody2D>();
 		animator = GetComponent<Animator> ();
+		testText = GameObject.Find ("amount").GetComponent<Text> ();
 	}
 		
 	void Update () {
