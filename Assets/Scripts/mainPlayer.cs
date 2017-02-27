@@ -17,6 +17,11 @@ public class mainPlayer : MonoBehaviour {
 	private Rigidbody2D theRB;
 	private Animator animator;
 
+	public Transform intersectIndicator;
+	public float intersectIndicatorRadius;
+	public LayerMask whatsIsUnSafe;
+	public bool isIntersect;
+
 	public Text testText;
 
 	void Start () {
@@ -27,6 +32,7 @@ public class mainPlayer : MonoBehaviour {
 		
 	void Update () {
 		Vector2 moveVec = new Vector2 (CrossPlatformInputManager.GetAxis ("Horizontal"), CrossPlatformInputManager.GetAxis ("Vertical"));
+		isIntersect = Physics2D.OverlapCircle (intersectIndicator.position, intersectIndicatorRadius, whatsIsUnSafe);
 
 		//Validation for left & right action.
 		if (moveVec.x < 0) {
@@ -47,6 +53,10 @@ public class mainPlayer : MonoBehaviour {
 
 		if (isAtacking) {
 			animator.SetTrigger("Shoot");
+		}
+
+		if (isIntersect) {
+			Debug.Log ("Die");
 		}
 
 		//Set values for animation
