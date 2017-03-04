@@ -1,10 +1,13 @@
 fileFormatVersion: 2
 guid: aaaa5e471b0ba6b44976444823d82036
-timeCreated: 1488153824
+timeCreated: 1488249427
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: LavaFloor_0
+    21300002: LavaFloor_1
+    21300004: LavaFloor_2
+    21300006: LavaFloor_3
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -93,6 +96,45 @@ TextureImporter:
         x: 15
         y: 3285
         width: 242
+        height: 721
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LavaFloor_1
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 3285
+        width: 240
+        height: 721
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LavaFloor_2
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 3286
+        width: 239
+        height: 723
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LavaFloor_3
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 3286
+        width: 240
         height: 721
       alignment: 0
       pivot: {x: 0.5, y: 0.5}

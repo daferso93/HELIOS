@@ -2,17 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
-using UnityEngine.UI;
 
 public class mainPlayer : MonoBehaviour {
 
 	public float moveSpeed;
 	public float jumpForce;
-
-	public KeyCode left;
-	public KeyCode right;
-	public KeyCode jump;
-	public KeyCode throwBall;
 
 	private Rigidbody2D theRB;
 	private Animator animator;
@@ -20,47 +14,67 @@ public class mainPlayer : MonoBehaviour {
 	public Transform intersectIndicator;
 	public float intersectIndicatorRadius;
 	public LayerMask whatsIsUnSafe;
-	public bool isIntersect;
+	private bool isIntersect;
+    private bool isJumping;
+    private bool isAtacking;
 
-	public Text testText;
+    private Vector2 moveVec;
 
-	void Start () {
+    void Start () {
 		theRB = GetComponent<Rigidbody2D>();
 		animator = GetComponent<Animator> ();
-		testText = GameObject.Find ("amount").GetComponent<Text> ();
-	}
+    }
 		
 	void Update () {
-		Vector2 moveVec = new Vector2 (CrossPlatformInputManager.GetAxis ("Horizontal"), CrossPlatformInputManager.GetAxis ("Vertical"));
+        moveVec = new Vector2 (CrossPlatformInputManager.GetAxis ("Horizontal"), CrossPlatformInputManager.GetAxis ("Vertical"));
 		isIntersect = Physics2D.OverlapCircle (intersectIndicator.position, intersectIndicatorRadius, whatsIsUnSafe);
+        isJumping = CrossPlatformInputManager.GetButton("JumpButton");
+        isAtacking = CrossPlatformInputManager.GetButton("ShootButtton");
 
-		//Validation for left & right action.
-		if (moveVec.x < 0) {
-			theRB.velocity = new Vector2 (-moveSpeed, theRB.velocity.y);
-			transform.localScale = new Vector3 (-1, 1, 1);
-		} else if (moveVec.x > 0) {
-			theRB.velocity = new Vector2 (moveSpeed, theRB.velocity.y);
-			transform.localScale = new Vector3 (1, 1, 1);
-		}
+        fnMoveMainChapter();
+        fnFireAnimations();
 
-		//Validation for jump & attack action.
-		bool isJumping = CrossPlatformInputManager.GetButton("JumpButton");
-		bool isAtacking = CrossPlatformInputManager.GetButton("ShootButtton");
+    }
 
-		if (isJumping) {
-			theRB.velocity = new Vector2 (theRB.velocity.x, jumpForce);
-		}
+    private void fnMoveMainChapter(){
+        if (moveVec.x < 0)
+        {
+            theRB.velocity = new Vector2(-moveSpeed, theRB.velocity.y);
+            transform.localScale = new Vector3(-1, 1, 1);
+        }
+        else if (moveVec.x > 0)
+        {
+            theRB.velocity = new Vector2(moveSpeed, theRB.velocity.y);
+            transform.localScale = new Vector3(1, 1, 1);
+        }
+    }
 
-		if (isAtacking) {
-			animator.SetTrigger("Shoot");
-		}
+    private void fnFireAnimations() {
+        if (isJumping){
+            theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
+        }
 
-		if (isIntersect) {
-			Debug.Log ("Die");
-		}
+        if (isAtacking){
+            animator.SetTrigger("Shoot");
+        }
 
-		//Set values for animation
-		animator.SetFloat("Speed", Mathf.Abs(theRB.velocity.x));
-		animator.SetBool ("Jump", isJumping);
-	}
+        if (isIntersect){
+            //StartCoroutine(dieAnimation());
+
+        }
+
+        animator.SetFloat("Speed", Mathf.Abs(theRB.velocity.x));
+        animator.SetBool("Jump", isJumping);
+    }
+
+    IEnumerator dieAnimation(){
+        Color beginColor = gameObject.GetComponent<Renderer>().material.color;
+        for (int i = 0; i < 10; i++)
+        {
+            gameObject.GetComponent<Renderer>().material.color = new Color(15, 10, 17, 1);
+            yield return new WaitForSeconds(0.1F);
+            gameObject.GetComponent<Renderer>().material.color = beginColor;
+        }
+        theRB.MovePosition(new Vector2(-14.83f, -2.46f));
+    }
 }
