@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\BulletControler.cs" />
      <Compile Include="Assets\Scripts\BulletHit.cs" />
      <Compile Include="Assets\Scripts\DestroyMe.cs" />
+     <Compile Include="Assets\Scripts\EnemyHealth.cs" />
      <Compile Include="Assets\Scripts\camera2DFollow.cs" />
      <Compile Include="Assets\Scripts\enemy1.cs" />
      <Compile Include="Assets\Scripts\enemyMovementController.cs" />
