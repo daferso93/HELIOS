@@ -5,7 +5,7 @@ using UnityEngine;
 public class enemy1 : MonoBehaviour {
 
     public float moveSpeed;
-    private Rigidbody2D theRB;
+    //private Rigidbody2D theRB;
 
     public Transform intersectIndicator;
     public float intersectIndicatorRadius;
@@ -15,7 +15,7 @@ public class enemy1 : MonoBehaviour {
     float next = 0f;
 
     void Start () {
-        theRB = GetComponent<Rigidbody2D>();        
+        //theRB = GetComponent<Rigidbody2D>();        
     }
 
     private void FixedUpdate(){

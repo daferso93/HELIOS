@@ -46,7 +46,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\BulletControler.cs" />
+     <Compile Include="Assets\Scripts\BulletHit.cs" />
+     <Compile Include="Assets\Scripts\DestroyMe.cs" />
      <Compile Include="Assets\Scripts\camera2DFollow.cs" />
+     <Compile Include="Assets\Scripts\enemy1.cs" />
+     <Compile Include="Assets\Scripts\enemyMovementController.cs" />
      <Compile Include="Assets\Scripts\mainPlayer.cs" />
      <Compile Include="Assets\Scripts\touchBehaivor.cs" />
      <None Include="Assets\Standard Assets\Fonts\OpenSans\License!.txt" />

@@ -10,8 +10,8 @@ public class mainPlayer : MonoBehaviour {
 
 	private Rigidbody2D theRB;
 	private Animator animator;
+    bool leftFacing = false;
 
-	public Transform intersectIndicator;
 	public float intersectIndicatorRadius;
 	public LayerMask whatsIsUnSafe;
 	private bool isIntersect;
@@ -20,6 +20,11 @@ public class mainPlayer : MonoBehaviour {
 
     private Vector2 moveVec;
 
+    public Transform gunTip;
+    public GameObject bullet;
+    float fireRate = 0.5f;
+    float nextFire = 0f;
+
     void Start () {
 		theRB = GetComponent<Rigidbody2D>();
 		animator = GetComponent<Animator> ();
@@ -27,7 +32,7 @@ public class mainPlayer : MonoBehaviour {
 		
 	void Update () {
         moveVec = new Vector2 (CrossPlatformInputManager.GetAxis ("Horizontal"), CrossPlatformInputManager.GetAxis ("Vertical"));
-		isIntersect = Physics2D.OverlapCircle (intersectIndicator.position, intersectIndicatorRadius, whatsIsUnSafe);
+		//isIntersect = Physics2D.OverlapCircle (intersectIndicator.position, intersectIndicatorRadius, whatsIsUnSafe);
         isJumping = CrossPlatformInputManager.GetButton("JumpButton");
         isAtacking = CrossPlatformInputManager.GetButton("ShootButtton");
 
@@ -41,11 +46,13 @@ public class mainPlayer : MonoBehaviour {
         {
             theRB.velocity = new Vector2(-moveSpeed, theRB.velocity.y);
             transform.localScale = new Vector3(-1, 1, 1);
+            leftFacing = true;
         }
         else if (moveVec.x > 0)
         {
             theRB.velocity = new Vector2(moveSpeed, theRB.velocity.y);
             transform.localScale = new Vector3(1, 1, 1);
+            leftFacing = false;
         }
     }
 
@@ -56,25 +63,19 @@ public class mainPlayer : MonoBehaviour {
 
         if (isAtacking){
             animator.SetTrigger("Shoot");
-        }
-
-        if (isIntersect){
-            //StartCoroutine(dieAnimation());
-
+            fireBulet();
         }
 
         animator.SetFloat("Speed", Mathf.Abs(theRB.velocity.x));
         animator.SetBool("Jump", isJumping);
     }
 
-    IEnumerator dieAnimation(){
-        Color beginColor = gameObject.GetComponent<Renderer>().material.color;
-        for (int i = 0; i < 10; i++)
-        {
-            gameObject.GetComponent<Renderer>().material.color = new Color(15, 10, 17, 1);
-            yield return new WaitForSeconds(0.1F);
-            gameObject.GetComponent<Renderer>().material.color = beginColor;
+    void fireBulet(){
+        if (Time.time > nextFire){
+            nextFire = Time.time + fireRate;
+
+			if (!leftFacing) { Instantiate(bullet, gunTip.position, Quaternion.Euler(new Vector3(0,0,0))); }
+			else if (leftFacing) { Instantiate(bullet, gunTip.position, Quaternion.Euler(new Vector3(0,0,180f))); }
         }
-        theRB.MovePosition(new Vector2(-14.83f, -2.46f));
     }
 }

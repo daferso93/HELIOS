@@ -6,7 +6,7 @@ public class touchBehaivor : MonoBehaviour {
 	private	int width = Screen.width / 2;
 	private int height = Screen.height / 2;
 
-	Camera camera;
+	//Camera camera;
 
 	void Update () {
 		if (Input.GetMouseButton (0) || Input.GetMouseButtonDown (0) || Input.GetMouseButtonUp (0)) {
